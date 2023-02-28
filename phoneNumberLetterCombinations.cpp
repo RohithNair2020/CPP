@@ -35,6 +35,10 @@ void solve(string phoneNumberString, string output, int index, vector<string> &a
 vector<string> getLetterCombinations(string phoneNumberString)
 {
     vector<string> ans; // the final ans vector
+    if (phoneNumberString.length() == 0)
+    {
+        return ans;
+    }
     string output = ""; // the output string
     int index = 0;      // to keep track of the current digit in the phone number string
 
